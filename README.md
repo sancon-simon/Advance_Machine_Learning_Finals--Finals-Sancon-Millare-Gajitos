@@ -69,13 +69,17 @@ Pandas for Data Manipulation and analysis, Seaborn for Statistical data visualiz
 **Data Cleaning and Preprocessing**
 
 •	**Handling Dates -** The "Invoice Date" column in our Dataset was converted to datetime format using ‘pd.to_datetime()’, and then set as the index for time series analysis.
+
 •	**Handling Missing Values -** Missing values were identified using ‘isnull()’ and the count of missing values was obtained using ‘sum()’. A heatmap visualization ‘sns.heatmap()’ was created to visualize the missing data pattern.
+
 •	**Descriptive Statistics** - Descriptive statistics of the dataset were generated using ‘describe()’ to gain insights into the data distribution and identify potential outliers.
+
 •	**Categorical Data** - Categorical variables like "Region", "Product Category", "Sales Method", and "Gender Type" were analyzed using value counts (‘value_counts()’) and visualized using bar plots (‘plt.bar()’ or ‘sns.countplot()’) to understand the distribution and trends within each category.
+
 •	**Data Transformation** - For machine learning implementation, data was prepared by dropping irrelevant columns ("Retailer ID", "State", "City"), creating a binary target variable ("High_Sales") based on a threshold, and generating dummy variables for categorical features using ‘pd.get_dummies()’.
+
 •	**Standardization** - Data standardization was performed using ‘StandardScaler()’ to scale numerical features before training the logistic regression model.
 The structure for any Python-based data analysis workflow is laid by these steps, providing a structured approach to comprehend and visualize user data. This is to ensure the dataset's structure, completeness, and compatibility with analysis and modeling techniques, thereby ensuring its readiness for advanced analysis and visualizations.
-
 
 ## III. Data Analysis Techniques
 
@@ -84,8 +88,11 @@ Outline the various data analysis techniques used in the project, such as:
 **Descriptive Statistics:** Summary statistic such as mean, median, standard deviation, minimum, and maximum values used to understand the distribution of data. These statistics provide a concise overview of the central tendency, variability, and shape of the dataset, facilitating a better understanding of its characteristics and informing subsequent analyses and decision-making processes. Here Here’s how they help in the context of Adidas Sales Analysis: 
 
 •	**Mean -** The mean provides the average sales value, helping to gauge the overall performance of Adidas products across different regions, product categories, or sales methods. It offers a central reference point for assessing sales trends and identifying areas of strength or weakness.
+
 •	**Median -**  The median represents the middle value of the sales data when arranged in ascending order. It is less affected by extreme values compared to the mean and provides a robust measure of central tendency. The median helps to understand the typical or typical sales performance, especially in datasets with outliner.
+
 •	**Standard Deviation -** The standard deviation measures the dispersion or spread of sales values around the mean. A higher standard deviation indicates greater variability in sales, which can highlight regions, product categories, or sales methods with inconsistent performance. This helps in assessing the reliability and predictability of sales data.
+
 •	**Minimum and Maximum Values -** The minimum and maximum sales values indicate the lowest and highest recorded sales figures, respectively. They provide insights into the range of sales performance observed in the dataset. Identifying the minimum and maximum values helps in understanding the breadth of sales data and identifying outliers or exceptionally high-performing regions, products, or sales methods.
 
 
