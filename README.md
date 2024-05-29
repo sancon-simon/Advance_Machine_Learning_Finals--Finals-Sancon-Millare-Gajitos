@@ -3,7 +3,7 @@
 </div>
 
 <div style="background-color: #FFFAE6; padding: 20px; text-align: center; display: flex; justify-content: center; align-items: center;">
-  <div style="display: grid; grid-template-columns: repeat(3, auto); gap: 10px;">
+  <div style="display: flex; flex-direction: column; gap: 10px;">
     <a href="#i-project-overview" style="text-decoration: none;">
       <button style="width: 150px; height: 50px; background-color: #FFD700; color: black; border: none; border-radius: 5px; cursor: pointer;">Project Overview</button>
     </a>
