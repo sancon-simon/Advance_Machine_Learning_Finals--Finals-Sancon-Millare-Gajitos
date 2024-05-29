@@ -79,6 +79,7 @@ Pandas for Data Manipulation and analysis, Seaborn for Statistical data visualiz
 •	**Data Transformation** - For machine learning implementation, data was prepared by dropping irrelevant columns ("Retailer ID", "State", "City"), creating a binary target variable ("High_Sales") based on a threshold, and generating dummy variables for categorical features using ‘pd.get_dummies()’.
 
 •	**Standardization** - Data standardization was performed using ‘StandardScaler()’ to scale numerical features before training the logistic regression model.
+
 The structure for any Python-based data analysis workflow is laid by these steps, providing a structured approach to comprehend and visualize user data. This is to ensure the dataset's structure, completeness, and compatibility with analysis and modeling techniques, thereby ensuring its readiness for advanced analysis and visualizations.
 
 ## III. Data Analysis Techniques
@@ -106,6 +107,7 @@ Outline the various data analysis techniques used in the project, such as:
 •	**Countplots -** used to visualize the distribution of categorical variables like gender type and their relationships with other categorical variables such as region, sales method, and product category. These plots help in understanding the frequency of different categories and their associations.
 
 •	**Line Plots -** used to visualize time series data, specifically monthly total sales over time. These plots show the trend in sales over months, helping to identify patterns, seasonality, and trends in Adidas sales data.
+
 These techniques are fundamental for making informed decisions based on user data. Descriptive statistics provide the numerical background necessary to understand the data at a basic level, while visualization techniques help bring this data to life, making it easier for stakeholders to digest and make strategic decisions based on these insights.
 
 
@@ -133,16 +135,85 @@ These techniques are fundamental for making informed decisions based on user dat
 
 
 ## V. Advanced Analysis
-Content for advanced analysis...
+
+Detail any advanced analytical techniques used, such as geographical insights or temporal trends. Describe how these analyses contribute to understanding broader market dynamics or seasonal patterns.
+
+•	**Geographical Insights -** By examining regional performance differences, advanced geographical analysis provides insights into consumer preferences and market demand in various geographic areas. By examining sales data on a geographical level, Adidas gains valuable insights into regional market dynamics, enabling targeted marketing efforts, strategic resource allocation, and market expansion opportunities.
+
+•	**Temporal Trends -** Time series analysis is utilized to uncover temporal trends in Adidas sales data, including seasonal fluctuations and overall sales trajectories over months or years. By analyzing sales patterns over time, Adidas can identify seasonal trends, peak sales periods, and fluctuations in consumer demand. This enables proactive inventory management, accurate sales forecasting, and strategic planning to capitalize on peak seasons and mitigate seasonal variations effectively.
+
+The comprehension of seasonal variations in Adidas sales data and larger market dynamics is helped by these precise analytical techniques. Adidas may increase its competitive standing in the changing sportswear industry by optimizing sales channels, tailoring business strategies, and gaining this insights into temporal and geographical patterns.
+
 
 ## VI. Machine Learning Implementation
-Content for machine learning implementation...
+
+**Logistic Regression Model**
+
+(Discuss the data preparation, Data Selection, Data Cleaning and Feature Scaling implementation. Process of building the machine learning model. Including the training and testing sets.) Logistic Regression's is a widely used statistical method for binary classification problems. For our analysis of predicting high sales in the Adidas dataset, logistic regression is a perfect fit because of its interpretability, computing efficiency, robustness, and suitability for binary classification.
+
+**Preparing the Data for Logistic Regression**
+
+**Data Selection and Data Cleaning -** To effectively prepare the data for analysis, we first inspect the dataset's shape, column names, and data types. We identify and count missing values, then visualize the missing data pattern to guide our cleaning strategy.
+
+We clean the data by removing irrelevant columns such as "Retailer ID", "State", and "City". These columns are not directly relevant to our analysis of sales performance. Next, we create a new binary target variable, High_Sales, based on the median of Total Sales. Sales values above the median are labeled as 1 (high sales), and those below or equal to the median are labeled as 0.
+
+For categorical variables such as "Gender Type", "Region", "Product Category", and "Sales Method", we use one-hot encoding to convert these categories into numerical values. This transformation is essential for the Logistic Regression model, as it cannot handle categorical data directly.
+
+**Feature Scaling -** Feature scaling is necessary to standardize the values of the features. We split the dataset into training and testing sets using a 70-30 split. Standardization ensures that all feature values are on a similar scale, which is important for the Logistic Regression model's effectiveness. We apply standard scaling to the training set and use the same scaling parameters to transform the testing set.
+
+**Building the Logistic Regression Model**
+
+**Model Training**
+
+•	**Splitting Data -** After data preparation, we split the dataset into training and testing sets. The training set, comprising 70% of the data, is used to train the model, while the testing set, containing the remaining 30%, is reserved for evaluation.
+
+•	**Model Fitting -** With the training set prepared, we fit the Logistic Regression model to the data. During this process, the model learns the relationship between the predictor variables (features) and the binary target variable (high sales). This involves estimating the coefficients of the model that best describe the relationship.
+
+**Model Evaluation:**
+
+•	**Performance Metrics -** After the model is trained, we evaluate its performance using various metrics. These metrics include accuracy, which measures the proportion of correctly predicted outcomes, and a confusion matrix, which provides a breakdown of correct and incorrect predictions. Also, a detailed classification report offers insights into the model's precision, recall, and F1-score for each class.
+
+•	**Residual Analysis -** Residual analysis involves examining the discrepancies between the predicted and actual values. By analyzing the residuals, we can identify any patterns or trends that the model may have missed. This analysis helps us assess the model's overall fit and identify areas for improvement.
+
 
 ## VII. Visual Insights
-Content for visual insights...
+
+Describe the types of plots and visualizations used in the analysis, including:
+
+•	**Bar Charts, Pie Charts, Heatmaps:** Usage and insights these visuals provide.
+
+•	**Device Preference by Country, Gender Distribution, etc.:** Specific insights drawn from each type of visualization.
+
+•	**Value Counts for State -** This bar chart displays the distribution of sales data across different states.
+
+•	**Value Counts for City -** The bar chart illustrates the distribution of sales across various cities.
+
+•	**Value Counts for Region -** This count plot showcases the distribution of sales across different regions.
+
+•	**Value Counts for Product Category -** This count plot presents the distribution of sales across different product categories.
+
+•	**Value Counts for Sales Method -** This count plot illustrates the distribution of sales across various sales methods.
+
+•	**Value Counts for Retailer -** The count plot displays the distribution of sales across different retailers.
+
+•	**Distribution of Retailer -** The pie chart illustrates the distribution of sales among different retailers.
+
+•	**Distribution of Region -** The pie chart represents the distribution of sales across different regions.
+
+•	**Distribution of Product Category -** This pie chart represents the distribution of sales across different product categories.
+
+•	**Distribution of Sales Method -** This pie chart show the distribution of of sales across different sales method.
+
 
 ## VIII. Conclusion
-Content for conclusion...
+This analysis of Adidas sales data offer significant value to the business by highlighting key trends and patterns across various dimensions such as region, city, retailer, product category, and sales method. By understanding the distribution and performance of sales in different geographic locations and through various sales channels, Adidas can tailor its marketing strategies, optimize inventory management, and enhance operational efficiency.
+
+Data-driven decision-making is crucial for maintaining a competitive edge in the market. The ability to pinpoint high-performing regions and cities allows for targeted marketing and resource allocation, ensuring that efforts are concentrated where they will have the most impact. Also, understanding the popularity of different product categories aids in inventory planning and product development, reducing waste and meeting consumer demand more effectively.
+
+Furthermore, the analysis of sales methods and retailer performance provides insights into the effectiveness of different sales channels and partnerships. This enables Adidas to refine its distribution strategies and develop more effective retailer relationships, ultimately driving higher sales and profitability.
+
+The potential for future analysis is vast. Continual monitoring and analysis of sales data can uncover emerging trends, shifting consumer preferences, and new opportunities for growth. By integrating advanced machine learning techniques, Adidas can further enhance predictive capabilities, enabling proactive decision-making and strategic planning.
+
 
 ## IX. Appendix
 Content for appendix...
