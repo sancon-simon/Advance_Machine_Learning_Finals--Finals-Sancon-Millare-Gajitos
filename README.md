@@ -60,13 +60,13 @@ Content for key findings...
 ## V. Advanced Analysis
 Content for advanced analysis...
 
-## VI.Machine Learning Implementation
+## VI. Machine Learning Implementation
 Content for machine learning implementation...
 
-## VII.Visual Insights
+## VII. Visual Insights
 Content for visual insights...
 
-## VIII.Conclusion
+## VIII. Conclusion
 Content for conclusion...
 
 ## IX. Appendix
