@@ -33,29 +33,29 @@
 </div>
 
 <!-- Add section anchors -->
-## Project Overview
+## I. Project Overview
 Content for project overview...
 
-## Libraries and Data Handling
+## II. Libraries and Data Handling
 Content for libraries and data handling...
 
-## Data Analysis Techniques
+## III. Data Analysis Techniques
 Content for data analysis techniques...
 
-## Key Findings
+## IV. Key Findings
 Content for key findings...
 
-## Advanced Analysis
+## V. Advanced Analysis
 Content for advanced analysis...
 
-## Machine Learning Implementation
+## VI.Machine Learning Implementation
 Content for machine learning implementation...
 
-## Visual Insights
+## VII.Visual Insights
 Content for visual insights...
 
-## Conclusion
+## VIII.Conclusion
 Content for conclusion...
 
-## Appendix
+## IX. Appendix
 Content for appendix...
