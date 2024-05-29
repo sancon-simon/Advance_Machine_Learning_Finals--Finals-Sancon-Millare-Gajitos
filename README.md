@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>README</title>
+<style>
+  body {
+    background-color: #FFFAE6; /* Light yellow background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+</style>
+</head>
+<body>
+
 <div style="background-color: #FFFAE6; padding: 20px; text-align: center;">
   <h1 style="text-align: center;">Data Analysis and Machine Learning Implementation</h1>
 </div>
