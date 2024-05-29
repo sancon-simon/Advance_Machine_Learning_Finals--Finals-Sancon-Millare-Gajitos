@@ -95,6 +95,18 @@ Outline the various data analysis techniques used in the project, such as:
 
 •	**Minimum and Maximum Values -** The minimum and maximum sales values indicate the lowest and highest recorded sales figures, respectively. They provide insights into the range of sales performance observed in the dataset. Identifying the minimum and maximum values helps in understanding the breadth of sales data and identifying outliers or exceptionally high-performing regions, products, or sales methods.
 
+**Data Visualization:** Various plots and charts are used to visualize the distribution of users by region, product category, sales method, and retailer. These visualizations provide a clear representation of the frequency or count of users in each category, enabling easy comparison and interpretation of distribution patterns. Here’s how various types of plots are employed in Adidas Sales Analysis: 
+
+•	**Bar Plots -** used to visualize the distribution of categorical variables such as state, city, region, product category, sales method, and retailer. These plots provide a clear graphical representation of the frequency or count of each category, enabling easy comparison and interpretation.
+
+•	**Pie Charts -** used to illustrate the distribution of categorical variables like retailer, region, and product category as proportions of the whole. They provide a visual representation of the relative contribution of each category to the total, making it easier to understand the distribution patterns.
+
+•	**Heatmaps -** used to visualize missing values in the dataset. It provides a graphical representation of the presence or absence of missing values across different columns, allowing for easy identification of missing data patterns.
+
+•	**Countplots -** used to visualize the distribution of categorical variables like gender type and their relationships with other categorical variables such as region, sales method, and product category. These plots help in understanding the frequency of different categories and their associations.
+
+•	**Line Plots -** used to visualize time series data, specifically monthly total sales over time. These plots show the trend in sales over months, helping to identify patterns, seasonality, and trends in Adidas sales data.
+These techniques are fundamental for making informed decisions based on user data. Descriptive statistics provide the numerical background necessary to understand the data at a basic level, while visualization techniques help bring this data to life, making it easier for stakeholders to digest and make strategic decisions based on these insights.
 
 
 ## IV. Key Findings
