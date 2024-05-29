@@ -1,4 +1,6 @@
-# **Data Analysis and Machine Learning Implementation**
+<div style="background-color: #FFFAE6; padding: 20px; text-align: center;">
+  <h1 style="text-align: center;">Data Analysis and Machine Learning Implementation</h1>
+</div>
 
 <div style="background-color: #FFFAE6; padding: 20px; text-align: center; display: flex; justify-content: center; align-items: center;">
   <div style="display: grid; grid-template-columns: repeat(3, auto); gap: 10px;">
